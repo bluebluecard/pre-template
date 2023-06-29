@@ -1,0 +1,95 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{svg}
+
+
+\title[pre-template]{Main Title}
+
+\subtitle{A short story}
+
+\author[au1, au2] % (optional, for multiple authors)
+{au1\inst{1} \and au2\inst{2}}
+
+
+\institute[MIPT  HSE ] % (optional)
+{
+  \inst{1}% 
+  FPMI\\
+  Moscow Institute of Physics and Technology
+  \and
+  \inst{2}%
+  Faculty\\
+  Higher School of Economics
+}
+\date[Summer 2023] % (optional)
+{28, June 2023}
+
+\logo{\includegraphics[height=1.3cm]{pic/logo_mipt.png}}
+
+
+\definecolor{miptblue}{RGB}{0,105,180}
+\setbeamercolor{titlelike}{bg=miptblue}
+\setbeamerfont{title}{series=\bfseries}
+
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+
+\section{First section}
+\begin{frame}
+\frametitle{Sample frame title}
+This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{pic/photo-1472214103451-9374bd1c798e.jpeg}
+    \includegraphics[scale=0.1]{pic/photo-1472214103451-9374bd1c798e.jpeg}
+    \includesvg[scale=0.1]{pic/NewTux.svg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includesvg[scale=0.1]{pic/NewTux.svg}
+    \includesvg[scale=0.1]{pic/NewTux.svg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\section{Second section}
+
+\begin{frame}
+\frametitle{Highlighting text}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+
+
+\end{document}
